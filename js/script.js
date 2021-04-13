@@ -1,13 +1,13 @@
 function init(){
 	
-	var entrybutton = document.getElementById("entrybutton");
+	var alertbutton = document.getElementById("entrybutton");
 	var input = document.getElementById("entryinput");
 	var output = document.getElementById("textoutput");
 	
-	entrybutton.addEventListner("click", alertFunction(){
-		input.innerHTML = output;
-		alert('Leah Patton: ' + input);
+	alertbutton.addEventListener('click', function() {
+		alert('Leah Patton: ' + input.value);
+		output.innerHTML = input.value;
 	});
-
+	
 }
 window.addEventListener('load', init);
